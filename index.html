@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>식스티세컨즈</title>
+  <!--slick-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+<script>
+  $( document ).ready( function() {
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
+    } );
+  </script>
+
+
+
+  <script src="js/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark px-3">
+      <div class="container-xl">
+        <a class="h1 navbar-brand" href="#">
+          <img src="img/logo_zepeto_white.png" alt="제페토">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse flex-grow-0 navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="d-lg-none m_info"><span>WELCOME</span><br><p>안녕하세요, 식스티세컨즈입니다.</p></div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                콘텐츠
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">아이템</a></li>
+                <li><a class="dropdown-item" href="#">월드</a></li>
+                <li><a class="dropdown-item" href="#">라이브</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">    
+              <a class="nav-link" href="#">크리에이터 프로그램</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">비지니스</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                가이드
+              </a>
+              <ul class="dropdown-menu">                
+                <li><a class="dropdown-item" href="#">가이드</a></li>
+                <li><a class="dropdown-item" href="#">학습</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">지원</a>
+            </li>
+          </ul>
+          <ul class="d-none d-xl-flex util" role="util">
+            <li><a href="#">
+              <button class="btn btn-outline-light px-4 pt-1 mt-3">
+              <span class="">콘텐츠관리</span></button></a></li>
+            <li><a href="#"><img src="img/notifications-outline.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main_video">
+      <video class="video" src="img/bg_home_video.mp4" autoplay="" loop=""></video>
+    </div>
+  </header>
+
+  <!-- 첫번째 section -->
+  <section class="section1 ">
+    <div class="container-lg d-flex flex-column mb-3 align-items-center">
+        <div class="section_text p-2 ">
+          <h2>크리에이터를 위한 제페토</h2>
+          <p>제페토 크리에이터는 제페토 세상의 모든 것을 직접 만들 수 있습니다.<br>
+            전 세계 3억 유저에게 당신의 아이디어를 보여주세요!</p>
+        </div>
+        <div class="section_img p-2">
+          <img src="img/img_creators.png" alt="">
+        </div>
+        <div class="section_more row p-2">
+          <div class="col ">
+              <h3>6800만</h3>
+              <p>스튜디오 아이템 판매량</p>
+          </div>
+          <div class="col">
+              <h3>230만</h3>
+              <p>스튜디오 크리에이터 수</p>
+          </div>
+          <div class="col">
+              <h3>3억</h3>
+              <p>제페토 가입자 수</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 두번째 section -->
+  <section class="section2 pt-5">
+    <div class="container-lg">
+      <div class="section_text">
+        <h2>제페토 세상이 내 손안에.</h2>
+        <p>아이템,월드,라이브까지.<br>
+          제페토는 크리에이터가 아이디어를 펼칠 수 있는 최고의 플랫폼입니다.</p>
+      </div>
+      <div class="section_img">
+        <img src="" alt="">
+      </div>
+      <div class="section_more d-flex justify-content-evenly ">
+        <div class="card p-5 d-flex align-items-center">
+            <img src="img/product_icon_item.svg" alt="">
+            <div class="pt-3">
+            <h3 >아이템</h3>
+            <p>패션 아이템을 만들고<span class="br"></span> 수익을 창출하세요.</p>
+            </div>
+            <button type="button" class="btn btn-primary">더 알아보기</button>
+        </div>
+        <div class= "card p-5 d-flex align-items-center">
+            <img src="img/product_icon_world.svg" alt="">
+            <div class="pt-3">
+            <h3>월드</h3>
+            <p>제페토가 세상에 <span class="br"></span>내 아이디이가 담긴 <span class="br"></span>월드를 만드세요.</p>
+            </div>
+            <button type="button" class="btn btn-primary">더 알아보기</button>
+        </div>
+        <div class="card p-5 d-flex align-items-center">
+          <img src="img/product_icon_live.svg" alt="">
+          <div class="pt-3">
+            <h3>라이브</h3>
+            <p>전 세계 유저들과<span class="br"></span>실시간 방송하세요.</p>
+          </div>
+            <button type="button" class="btn btn-primary">더 알아보기</button>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- 세번째 section -->
+  <section class="section3">
+    <div class="container-lg">
+      <div class="section_text">
+        <h2>3억 명을 사로잡을<br>
+          크리에이터가 될 기회.</h2>
+        <p>230만이 넘는 제페토 크리에이터가 전 세계 3억 유저에게 아이디어를 선보이고 있습니다.<br>
+          제페토의 대표 크리에이터를 바로 만나보세요.</p>
+      </div>
+      <div class="section_img center mt-5 mb-5">
+          <div>
+            <img src="img/img_slider_01.png" alt="">
+          </div>
+          <div>
+            <img src="img/img_slider_02.png" alt="">
+          </div>
+          <div>
+            <img src="img/img_slider_03.png" alt="">
+          </div>
+          <div>
+            <img src="img/img_slider_04.png" alt="">
+          </div>
+          <div>
+            <img src="img/img_slider_05.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 네번째 section -->
+  <section class="section4">
+    <div class="container-lg  d-flex flex-column align-items-center">
+      <div class="section_text">
+        <h2>크리에이터의 수익 창출은 기본.</h2>
+        <p>다양한 콘텐츠를 만들고 수익도 올려보세요.</p>
+      </div>
+      <div class="section_img">
+        <video src="img/home_profit_video.mp4" autoplay="" loop=""></video>
+      </div>
+  </div>
+
+  </section>
+
+  <!-- 다섯번째 section -->
+  <section class="section5 ">
+    <div class="container-lg">
+      <div class="section_text pb-5 ">
+        <h2>이제 나도 제페토 크리에이터.</h2>
+        <p>간단한 3가지 과정만 거치면 제페토 크리에이터가 될 수 있습니다.<br>
+          궁금한 점이 있다면 사이트 상단 [지원]을 통해 문의해 주세요.</p>
+          <button type="button" class="btn btn-primary btn-lg">시작하기</button>
+      </div>
+      <div class="section_more  d-flex justify-content-center">
+        <div class="p-4 d-flex flex-column align-items-center">
+            <h4 class="num">1</h4>
+            <h3>제페토 스튜디오 가입하기</h3>
+            <p>제페토 계정만 있다면 누구나 무료로<br> 가입할 수 있습니다.</p>
+        </div>
+        <div class="p-4 d-flex flex-column align-items-center">
+            <h4  class="num">2</h4>
+            <h3>콘텐츠 심사</h3>
+            <p>제작에 필요한 모든 가이드를 제공합니다. <br>지금 바로 시작하세요..</p>
+        </div>
+        <div class="p-4 d-flex flex-column align-items-center">
+            <h4  class="num ">3</h4>
+            <h3>라이브</h3>
+            <p>제페토 유저들이 안전하고 즐겁게 <br>즐길 수 있도록 심사를 거친 후 공개됩니다.<br> 바로 시작하세요.</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <footer>
+    <div class="container-lg">
+      <div class="row info">
+        <div class="col-lg-6 copy">
+          <ul>
+            <li>
+              <a href=""> 이용약관</a>
+              <a href="">개인정보처리방침</a>
+              <a href="">문의하기</a>
+              <a href=""> Credits</a>
+            
+          </ul>
+          &copy;  NAVER Z Corp. All rights reserved.
+        </div>
+        <ul class="col-lg-6 address">
+            <li>
+              <a href=""><img src="img/sns_icon_insta.svg" alt=""> </a>
+              <a href=""><img src="img/sns_icon_twitter.svg" alt=""></a>
+              <a href=""><img src="img/sns_icon_youtube.svg" alt=""></a>
+              <a href=""><img src="img/sns_icon_tiktok.svg" alt=""></a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
