@@ -1,1 +1,1 @@
-# bootstrap
+# bootstrap 연습
